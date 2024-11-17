@@ -26,3 +26,5 @@ function arithmetic(a, b, operator){
             return a*b;
     }
   }
+
+  console.log(arithmetic(5,3,"add"));

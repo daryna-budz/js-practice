@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    
+    <form action="#" id="galleryForm">
+      <label for="url">Enter URL :</label>
+      <input type="url" name="imageUrl" id="url" required>
+
+
+      <label for="descr">Img Description :</label>
+      <input type="text" name="imageDescr" id="descr" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="img-container"></div>
+
+    <div id="lightbox" class="modal">
+       <span class="close">&times;</span>
+       <button class="prev">&#10094;</button> 
+       <img class="modal-content" id="lightboxImg">
+       <button class="next">&#10095;</button> 
+    </div>
+  
+
+    <script src="script.js"></script>
+  </body>
+</html>
