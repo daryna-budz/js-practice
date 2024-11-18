@@ -1,0 +1,51 @@
+<!--
+    Event Handling
+    Завдання:
+
+Створіть інтерактивну форму реєстрації користувача. Форма повинна включати поля для імені, електронної пошти, та пароля. Реалізуйте наступні функціональності:
+
+Валідація полів форми при натисканні кнопки "Submit".
+
+Відображення повідомлень про помилки під відповідними полями.
+
+Динамічне відображення підказок при фокусуванні на поле вводу.
+
+Відправка даних форми за допомогою події submit, якщо всі поля пройшли валідацію.
+
+Вимоги:
+
+Використовуйте події focus, blur, input та submit для управління взаємодією користувача.
+
+Забезпечте динамічну валідацію даних в полях форми.
+
+Відображайте та приховуйте повідомлення про помилки та підказки залежно від взаємодії користувача.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="#" class="userForm">
+       <label for="username">Name : </label>
+       <input type="text" id="username" name="username" required>
+       <div id="nameError"></div>
+
+       <label for="email">Email : </label>
+       <input type="email" id="email" name="email" required>
+       <div id="emailError"></div>
+
+       <label for="password">Password : </label>
+       <input type="password" id="password" name="password" required>
+       <div id="pswrdError"></div>
+       <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+body { 
+    background-color: #adadef;
+    color: #ffffff;
+    padding: 0 24px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .userForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .invalid{
+    border-color: red;
+  }
+  
+  #nameError, #emailError, #pswrdError{
+    color: red;
+  }
