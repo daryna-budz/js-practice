@@ -106,3 +106,92 @@ body{
 .current::before{
     background-color: #f9d6f6;
 }
+
+.taken{
+    color: #fff;
+}
+
+.taken::before{
+    background-color: #865cfa;
+}
+
+#calendar-form {
+    margin-left: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 5px solid #f9d6f6;
+    padding: 10px;
+}
+
+#selected-date{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 450;
+    color: #865cfa;
+}
+
+#calendar-form h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 450;
+}
+
+#calendar-form textarea{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    width: 200px;
+    height: 350px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #f9d6f6;
+    padding: 10px 5px;
+}
+
+#calendar-form div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#save-event{
+    width: 70px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #865cfa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#save-event:hover{
+    background-color: #593baa;
+}
+
+#cancel-event{
+    width: 70px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #fa5c7e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#cancel-event:hover{
+    background-color: #a9374f;
+}
+
+.hidden{
+    display: none;
+}
+
