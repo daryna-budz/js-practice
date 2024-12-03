@@ -120,5 +120,32 @@ body{
 
   #taskButton{
     cursor: pointer;
+    text-align: center;
   }
   
+
+  #all-filter, #completed-filter, #incomplete-filter{
+    width: 90px;
+    height: 70px;
+    border: 4px solid rgb(73, 171, 236);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(73, 171, 236);
+    text-transform: uppercase;
+  }
+
+  #completed-filter{
+    width: 120px;
+    border: 4px solid rgb(18, 157, 78);
+    color: rgb(18, 157, 78);
+  }
+
+  #incomplete-filter{
+    width: 140px;
+    border: 4px solid rgb(253, 110, 110);
+    color: rgb(253, 110, 110);
+  }
