@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8d4f2;
+}
+
+.list-container{
+    width: 500px;
+    min-height: 600px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 20px 5px 30px;
+}
+
+.list-container h2{
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+}
+
+.add-form{
+    display: flex;
+}
+
+.add-form input{
+    height: 65px;
+    width: 75%;
+    border-radius: 35px;
+    border: none;
+    padding: 5px 25px;
+    background-color: #ededed;
+    font-size: 16px;
+}
+
+#add-button{
+    height: 75px;
+    width: 25%;
+    border-radius: 45px;
+    border: none;
+    background-color: #daa9e5;
+    margin-left: -70px;
+    text-transform: uppercase;
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add-button:hover{
+    background-color: #f7b4f1;
+}
+
+#todo-list{
+    padding: 50px 10px;
+}
+
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.todo-item label{
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.checkbox{
+    display: none;
+}
+
+.checkbox + label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 50px;
+  }
+
+.checkbox + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked + label::before {
+    background-color: #e92566; 
+    border-color: #e92566;
+    background-image: url(images/check.svg);
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .checkbox:checked + label{
+    text-decoration: line-through; 
+    color: #999;
+  }
+
+  #taskButton{
+    cursor: pointer;
+  }
+  
