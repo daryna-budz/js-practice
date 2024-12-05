@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0d8f4;
+}
+
+.phonebook-container{
+    width: 500px;
+    min-height: 600px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 20px 5px 30px;
+}
+
+.phonebook-container h2{
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+}
+
+#search-input, .phonebook-form input{
+    height: 45px;
+    width: 70%;
+    border-radius: 15px;
+    border: none;
+    padding: 8px 25px 5px 25px;
+    background-color: #ededed;
+    font-size: 16px;
+}
+
+.phonebook-form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+#add-button{
+    height: 45px;
+    width: 35%;
+    text-transform: uppercase;
+    border-radius: 13px;
+    background-color: green;
+    border: none;
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add-button:hover{
+    background-color: rgb(4, 61, 4);
+}
+
+#contacts-list h3{
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: left;
+    margin-top: 45px;
+}
+
+#search-button, #removeButton{
+    height: 40px;
+    min-width: 18%;
+    text-transform: uppercase;
+    border-radius: 13px;
+    background-color: rgb(234, 138, 172);
+    border: none;
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#search-button:hover{
+    background-color: rgb(142, 82, 103);
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact-item p{
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#removeButton{
+    background-color: rgb(244, 96, 96);
+}
+
+
+
+
